@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>个人网站 | 网站Web前端 | 网站设计</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+<link href="css/font_icon.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+   <div class="center-block">
+        <ul class="top_l">
+            <li><a href="/">主页</a></li>
+            <li><a href="/blog">博客</a></li>
+        </ul>
+        <ul class="top_r">
+            <li>你好，xdlumia</li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">高级管理</a></li>
+            <li><a href="#">注销</a></li>
+        </ul>
+     </div>
+</header>
+<nav class="blog-nav">
+  <div class="center-block">
+    <div class="blog-logo">
+      <a href="/blog" class="logo"><img src="images/blog-logo.png" height="50"></a>
+    </div>
+    <ul class="blog-nav-menu">
+        <li><a href="/blog/category/study" target="_blank">学无止境</a></li>
+        <li><a href="/blog/category/travel" target="_blank">摄影旅行</a></li>
+        <li><a href="/blog/category/life" target="_blank">生活感悟</a></li>
+        <li><a href="/blog/category/tucao" target="_blank">互联网+</a></li>
+    </ul>
+    <form id="box" target="_blank" role="search" method="get" class="searchform" action="http://dreamwq.com/blog/">
+      <input type="text" class="text" value="" name="s" id="s" placeholder="Search...">
+      <input type="submit" class="sub" id="searchsubmit" value="&#xe608;">
+   </form>
+  </div>
+</nav>
+
+<!-- 移动端菜单 -->
+<div class="m-nav">
+  <div class="m-menu-ico">
+   <div class="ico-menu"></div>
+  </div>
+    <a href="/blog" class="mlogo"><img src="images/blog-logo.png" height="30"></a>
+  <div class="m-search">
+     <div class="search-ico"> 
+     </div>
+  </div>
+   <ul class="m-menu">
+        <li><a href="/blog/category/study" target="_blank">学无止境</a></li>
+        <li><a href="/blog/category/travel" target="_blank">摄影旅行</a></li>
+        <li><a href="/blog/category/life" target="_blank">生活感悟</a></li>
+        <li><a href="/blog/category/tucao" target="_blank">互联网+</a></li>
+    </ul>
+    <div class="m-searchbox">
+      <form target="_blank">
+        <input type="text" class="text" value="" name="s" id="s" placeholder="Search...">
+        <input type="submit" class="sub webfont" id="searchsubmit" value="&#xe608;">
+     </form>
+   </div>
+</div>
+<div class="container center-block">
+    <div class="notfound">
+      <img class="nf-l" src="images/img404.gif" alt="">
+      <div class="nf-r">
+        <img src="images/img4042.jpg" alt="">
+        <p>哎呀，你好像迷路了<br>不要慌！<em id="timeleft">5</em>秒后返回首页</p>
+        <a href="/">返回首页</a>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+window.onload = function(){
+  var i = 4;
+  setInterval(function(){
+    if (i<0) {
+      location.href="http://www.dreamwq.com";
+    }else{
+      document.getElementById('timeleft').innerHTML = i--;
+    }
+  },1000)
+}
+</script>
+<footer>
+   <a href="/" class="logo"><img src="images/logo.png"></a>
+   <ul class="nav">
+     <li><a href="/">首页</a></li>
+     <li><a href="resume.html" target="_blank">简历</a></li>
+     <li><a href="blog" target="_blank">博客</a></li>
+     <li><a href="#about">关于</a></li>
+     <li><a href="case" target="_blank">案例</a></li>
+     <li><a href="#contact">联系</a></li>
+   </ul>
+   <ul class="social">
+     <li><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=214005111&amp;site=qq&amp;menu=yes" target="_blank"></a></li>
+     <li><a href="http://weibo.com/u/3119916730" target="_blank"></a></li>
+     <li><a href="https://www.facebook.com/xdlumia" target="_blank"></a></li>
+     <li><a href="https://plus.google.com/u/0/" target="_blank"></a></li>
+   </ul>
+   <div class="bottom">THANKS</div>
+</footer>
+<!-- JavaScript脚本 -->
+<script src="js/jquery.min.js"></script>
+<!-- Swiper JS -->
+<script src="js/owl.js"></script>
+<!-- 更改滚动条 -->
+<script src="js/jquery.nicescroll.js"></script>
+<!-- 让页面流畅滚动 让导航贴住顶部 -->
+<script src="js/jquery.sticky.js"></script> 
+
+<script>
+var owl = $('.owl-carousel'); 
+owl.owlCarousel({
+    items: 1,
+    loop:true,
+    animateOut: 'fadeOut',
+    autoplay:true,
+    autoplayTimeout:3000,
+    responsive:{    
+        765:{
+          items:1
+        }
+    }
+});
+
+
+// loading
+$(window).load(function(){
+  $(".preloader").delay(600).fadeOut("slow")
+});
+
+// niceScroll
+
+// $("html").niceScroll();
+
+
+// Stick menu
+if($(window).width()>540){
+$("nav").sticky({topSpacing:0});
+}
+// var navH = $("nav").offset().top;
+//  //滚动条事件
+//  $(window).scroll(function(){
+//   var scroH = $(this).scrollTop();
+//   if(scroH>=navH){
+//     $("nav").addClass('navfixed')
+//   }else if(scroH<navH){
+//      $("nav").removeClass("navfixed")
+//   }
+//  })
+
+
+
+
+//主页移动端菜单
+$(document).on('click',".m-menu-ico",function(){
+  $(".m-menu-ico").toggleClass('on');
+  $(".m-menu").slideToggle();
+  $(".m-searchbox").slideUp("fast");
+})
+
+$(document).on('click',".m-search",function(){
+  $(".m-search").toggleClass('on');
+  $(".m-searchbox").slideToggle();
+  $(".m-menu").slideUp("fast");
+})
+
+if($(window).width()<=540){
+  $(".m-nav").sticky({topSpacing:0});
+  $(".m-menu").on("click",function(){
+    $(this).hide();
+    $('.m-menu-ico').removeClass('on')
+  });
+}
+
+// 搜索按钮
+$(".blog-nav form .text").on("click",function(){
+  $(".blog-nav form ").animate({width:"200px"},"fast")
+
+})
+</script>
+</body>
+</html>

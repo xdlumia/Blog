@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>个人网站 | 网站Web前端 | 网站设计</title>
+<meta name="baidu-site-verification" content="zykm03Lpss" />
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
+<!-- 兼容IE，chrome=1试用的前提是必须安装了chrome浏览器 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- 兼容国内浏览器，直接采用高速模式渲染页面 -->
+<meta name="renderer" content="webkit">
+<!-- 添加到主屏后的标题（iOS 6 新增） -->
+<meta name="apple-mobile-web-app-title" content="冬瓜主页">
+<!-- iPhone 6 plus上是180×180，iPhone 6 是120x120 -->
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/retinahd_icon.png">
+<!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png" />
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet"  href="fonts/iconfont.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 加载动画Begin -->
+<div class="preloader">
+  <div class="loaditem">
+     <img src="images/loading.gif">
+  </div>
+</div>
+<!-- 加载动画End -->
+<!--banner Swiper -->
+<div class="bannerBg">
+ <div class="swiper-container banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide center slide-1">
+            <div class="banner-opacity"></div>
+            <div class="banner-info">
+               <div class="banner-logo"><img src="images/logo.png" alt="商标"></div>
+               <div class="banner-title">涅槃重生</div>
+               <hr>
+               <div class="banner-text">做最新的自己</div>
+            </div>
+        </div>
+        <div class="swiper-slide center slide-2">
+            <div class="banner-opacity"></div>
+            <div class="banner-info">
+               <div class="banner-logo dreamText"><img src="images/ico_dream.png" alt="梦想"></div>
+               <div class="banner-logo dreamEn"><img src="images/ico_dreamEn.png" alt="梦想"></div>
+               <div class="banner-text">为梦想，不休不止</div>
+            </div>
+        </div>
+      </div>
+   
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="arrow-down"><a href="#about">&#xe610;</a> </div>
+  </div>
+</div>
+
+<nav>
+  <div class="center-block">
+    <div class="nav-logo">
+      <a href="/home"><img src="images/nav-logo.png" alt="个人网站"></a>
+    </div>
+    <div class="m-nav-menu">
+       <div class="ico-menu"></div>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="/" target="_blank">博客</a></li>
+        <li><a href="/home/resume.html" target="_blank">简历</a></li>
+        <li><a href="#about">关于</a></li>
+        <li><a href="#case">案例</a></li>
+        <li><a href="#contact">联系</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- 关于我 -->
+<article class="about zindex" id="about">
+  <div class="center-block">
+    <h2 class="block-titleEn" data-scroll-reveal="enter top after 0.1s">about me</h2>
+    <h3 class="block-title" data-scroll-reveal="enter bottom after 0.3s">关于·我</h3>
+    <hr class="line" data-scroll-reveal="enter bottom after .3s">
+    <p class="block-info" data-scroll-reveal="enter top after .4s">
+      热衷于新技术的学习和探讨，热衷页面布局。崇尚化繁为简理念
+      <br>对互联网发展趋势高兴趣关注，积极配合开发同事完成工作
+    </p>
+    <ul class="skill-list">
+    <li data-percent="90" data-scroll-reveal="enter top after 0.3s">
+      <div class="skill-item">
+       <div class="skill-inscir">
+         <span class="skill-text"></span>
+         <span class="skill-per">0%</span>
+       </div>
+        <div class="skill-img" src="images/wave.png" ></div>
+      </div>
+      <p class="skill-title">Photoshop</p>
+    </li>
+    <li data-percent="95" data-scroll-reveal="enter top after 0.4s">
+      <div class="skill-item">
+       <div class="skill-inscir">
+         <span class="skill-text"></span>
+         <span class="skill-per">0%</span>
+       </div>
+        <div class="skill-img" src="images/wave.png" ></div>
+      </div>
+      <p class="skill-title">Html+Css3</p>
+    </li>
+    <li data-percent="65" data-scroll-reveal="enter top after 0.5s">
+      <div class="skill-item">
+       <div class="skill-inscir">
+         <span class="skill-text"></span>
+         <span class="skill-per">0%</span>
+       </div>
+        <div class="skill-img" src="images/wave.png" ></div>
+      </div>
+      <p class="skill-title">Javascript</p>
+    </li>
+    <li data-percent="80" data-scroll-reveal="enter top after 0.6s">
+      <div class="skill-item">
+       <div class="skill-inscir">
+         <span class="skill-text"></span>
+         <span class="skill-per">0%</span>
+       </div>
+        <div class="skill-img" src="images/wave.png" ></div>
+      </div>
+      <p class="skill-title">Jquery</p>
+    </li>
+    <li data-percent="60" data-scroll-reveal="enter top after 0.7s">
+      <div class="skill-item">
+       <div class="skill-inscir">
+         <span class="skill-text"></span>
+         <span class="skill-per">0%</span>
+       </div>
+        <div class="skill-img" src="images/wave.png" ></div>
+      </div>
+      <p class="skill-title">Bootstrap</p>
+    </li>
+    <li data-percent="65" data-scroll-reveal="enter top after 0.8s">
+      <div class="skill-item">
+       <div class="skill-inscir">
+         <span class="skill-text"></span>
+         <span class="skill-per">0%</span>
+       </div>
+        <div class="skill-img" src="images/wave.png" ></div>
+      </div>
+      <p class="skill-title">Wordpress</p>
+    </li>
+  </ul>
+    <a href="/home/resume.html" target="_blank" class="button" data-scroll-reveal="enter top after .5s"></a>
+  </div>
+</article>
+
+<!-- 作品 -->
+<article class="works zindex" id="case">
+  <div class="center-block">
+    <h2 class="block-titleEn" data-scroll-reveal="enter top after 0.1s">my works</h2>
+    <h3 class="block-title" data-scroll-reveal="enter bottom after 0.3s">精选·案例</h3>
+    <hr class="line" data-scroll-reveal="enter bottom after .4s">
+    <p class="block-info" data-scroll-reveal="enter top after .5s">
+      热衷于新技术的学习和探讨，热衷页面布局。崇尚化繁为简理念
+      <br>对互联网发展趋势高兴趣关注，积极配合开发同事完成工作
+    </p>
+  </div>
+   <div class="works-list-tab">
+     <ul>
+       <li class="act">响应式</li>
+       <li>PC端</li>
+       <li>移动端</li>
+     </ul>
+   </div>
+   <ul class="works-list">
+   <li>
+      <a href="/home/works/cart/cart.html" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>商城订单中心</p></div>
+        <img src="images/cart.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="/home/works/55du" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>55度杯营销单页</p></div>
+        <img src="images/du55.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://en.72byte.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>72变英文站</p></div>
+        <img src="images/work15.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.72byte.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>72变智能硬件</p></div>
+        <img src="images/work14.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.fx2.cn/zs" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>饭小二官网</p></div>
+        <img src="images/work04.jpg">
+      </a>
+    </li>
+   </ul>
+
+   <ul class="works-list" style="display: none;">
+    <li>
+      <a href="/home/works/Mid-Autumn" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>中秋节促销</p></div>
+        <img src="images/work13.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="/home/works/fushi" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>浮石资本</p></div>
+        <img src="images/work16.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.959.cn/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>959品牌招商网</p></div>
+        <img src="images/work01.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.959118.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>959118招商网</p></div>
+        <img src="images/work02.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.fx2.cn" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>饭小二点餐网</p></div>
+        <img src="images/work03.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.ljbbj.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>廖记棒棒鸡</p></div>
+        <img src="images/work05.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.ydch88.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>一道彩虹电商</p></div>
+        <img src="images/work06.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.swordtt.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>世奥得官网</p></div>
+        <img src="images/work07.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://ask.959.cn/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>959创业问答</p></div>
+        <img src="images/work09.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.mypaopao.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>泡泡火锅官网</p></div>
+        <img src="images/work10.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="/works/ertai" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>肇庆西江医院二胎</p></div>
+        <img src="images/work11.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.0758120.com/" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>肇庆西江医院</p></div>
+        <img src="images/work12.jpg">
+      </a>
+    </li>
+   </ul>
+  <ul class="works-list" style="display: none;">
+    <li>
+      <a href="/home/works/h5app/index.html" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>H5app页面</p></div>
+        <img src="images/h5app.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="/home/works/gifts/index.html" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>礼品册</p></div>
+        <img src="images/gifts.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="/home/works/fuwuhao/usercenter.html" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>微信服务号</p></div>
+        <img src="images/fuwu.jpg">
+      </a>
+    </li>
+    <li>
+      <a href="/home/works/newyear/index.html" target="_blank" rel="nofollow">
+        <div class="work-list-titlebg"><p>与72变得故事</p></div>
+        <img src="images/newyear.jpg">
+      </a>
+    </li>
+
+
+   </ul>
+    <a href="#" target="_blank" data-scroll-reveal="enter top after .3s" class="button"></a>
+</article>
+
+<!-- <article class="advantage zindex">
+   <div class="adv-title" data-scroll-reveal="enter top after .1s">想做个网站？
+    <p class="adv-title-info" data-scroll-reveal="enter top after .3s">如浮舟，泛江河之上，任风雨飘摇，而怡然自得；</p>
+   </div>
+   <div class="adv-main">
+     <div class="adv-item" data-scroll-reveal="enter left after .1s">
+        <i class="icon-dingzhi iconfont"></i>
+        <div class="adv-title clearbg">定制化开发</div>
+        <hr>
+     </div>
+     <div class="adv-item" data-scroll-reveal="enter bottom after .1s">
+        <i class="icon-xiangyingshi iconfont"></i>
+        <div class="adv-title clearbg">H5响应式布局</div>
+        <hr>
+     </div>
+     <div class="adv-item" data-scroll-reveal="enter right after .1s">
+        <i class="icon-seo-marketing-business-tag-filter iconfont"></i>
+        <div class="adv-title clearbg">良好的SEO</div>
+        <hr>
+     </div>
+   </div>
+  <div class="center-block">
+  <ul>
+    <li data-scroll-reveal="enter top after .1s">
+      <i class="iconfont">&#xe65b;</i>
+      <h2 class="con-title">官网建设</h2>
+      <p class="info-con">展示企业形象，宣传产品与服务。</p>
+    </li>
+    <li data-scroll-reveal="enter top after .2s">
+      <i class="iconfont">&#xe622;</i>
+      <h2 class="con-title">行业门户</h2>
+      <p class="info-con">打造商务平台，树立权威形象。</p>
+    </li>
+    <li data-scroll-reveal="enter top after .3s">
+      <i class="iconfont">&#xe6a1;</i>
+      <h2 class="con-title">手机网站</h2>
+      <p class="info-con">开发WAP端市场客户，精准推广</p>
+    </li>
+    <li data-scroll-reveal="enter top after .4s">
+      <i class="iconfont">&#xe6c5;</i>
+      <h2 class="con-title">个人网站</h2>
+      <p class="info-con">记录你的生活的故事、闪现的灵感</p>
+    </li>
+  </ul>
+  </div>
+</article> -->
+
+<!-- 合作伙伴 -->
+<article class="partner zindex">
+  <div class="center-block" data-scroll-reveal="enter top after .1s">
+    <div class="info-title" data-scroll-reveal="enter top after .3s"><img class="title-top" src="images/xin.png" alt="">工作经历</div>
+  <hr data-scroll-reveal="enter top after .4s">
+    <div class="info-con" data-scroll-reveal="enter top after .5s">
+     <img src="images/case1.png" alt="959网络科技有限公司" title="959网络科技有限公司">
+     <img src="images/case2.png" alt="华夏天工网络科技有限公司" title="华夏天工网络科技有限公司">
+     <img src="images/case3.png" alt="72变智能硬件" title="72变智能硬件">
+    </div>
+    <a href="#" target="_blank" class="button" data-scroll-reveal="enter top after .4s"></a>
+  </div>
+</article>
+
+
+<!-- 联系我-->
+<article class="contact zindex">
+  <div class="center-block" id="contact">
+    <h2 class="block-titleEn" data-scroll-reveal="enter top after .5s">contact</h2>
+    <h3 class="block-title" data-scroll-reveal="enter top after .7s">联系·我</h3>
+    <hr class="line" data-scroll-reveal="enter top after .9s">
+    <p class="block-info" data-scroll-reveal="enter top after .6s">
+      席不正 不坐
+      <br>简单做人，用心做事
+    </p>
+    <div class="contact-con">
+      <img src="images/ewm.gif" data-scroll-reveal="enter left after .5s">
+      <div class="contact-emal" data-scroll-reveal="enter right after .5s">
+        <span>王晓冬:<br>18210256005</span>
+        <span>E-mail:<br>xdq@live.cn</span>
+        <span>QQ/微信：<br>214005111</span>
+      </div>
+    </div>
+  </div>
+</article>
+<footer>
+   <a href="/" class="logo"><img src="images/logo.png"></a>
+   <ul class="nav">
+     <li><a href="/">首页</a></li>
+     <li><a href="/home/resume.html" target="_blank">简历</a></li>
+     <li><a href="/" target="_blank">博客</a></li>
+     <li><a href="#about">关于</a></li>
+     <li><a href="case" target="_blank">案例</a></li>
+     <li><a href="#contact">联系</a></li>
+
+   </ul>
+   <ul class="social">
+     <li><a class="icon-qq1" href="http://wpa.qq.com/msgrd?v=3&amp;uin=214005111&amp;site=qq&amp;menu=yes" target="_blank" rel="nofollow"></a></li>
+     <li><a class="icon-iconfontweibo" href="http://weibo.com/u/3119916730" target="_blank" rel="nofollow"></a></li>
+     <li><a class="icon-facebook" href="https://www.facebook.com/xdlumia" target="_blank" rel="nofollow"></a></li>
+     <li><a class="icon-googleplus" href="https://plus.google.com/u/0/" target="_blank" rel="nofollow"></a></li>
+   </ul>
+   <div class="bottom">THANKS</div>
+</footer>
+<!-- JavaScript脚本 -->
+<script src="js/jquery.min.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<!-- 更改滚动条 -->
+<script src="js/jquery.nicescroll.js"></script>
+<!-- 让页面流畅滚动 让导航贴住顶部 -->
+<script src="js/jquery.sticky.js"></script> 
+<script src="http://cdn.dowebok.com/134/js/scrollReveal.js"></script>
+
+
+<script>
+
+  // Menu Scroll to content and Active menu
+
+ $('a[href*=#]').bind('click', function(e) {
+  e.preventDefault();   
+  var target = $(this).attr("href");
+  $('html, body').stop().animate({ scrollTop: $(target).offset().top-140 }, 1000, function() {
+  }); 
+  return false;
+   });
+
+// 技能列表
+var progress = 0;
+$('.skill-list li').on('mouseenter',function(){
+  var val = $(this).attr("data-percent");
+  $(this).children('.skill-item').children('.skill-img').css('bottom',-(100-val)+"%");
+
+  function step() {
+  progress += 2;
+  $('.skill-inscir .skill-per').html(progress + "%");
+  if (progress < val) {
+      requestAnimationFrame(step);
+      }
+  }
+  setTimeout(function(){
+   requestAnimationFrame(step);
+  },200)
+})
+
+$('.skill-list li').on('mouseleave',function(){
+   $('.skill-img').css('bottom','-100px');
+   progress = 0;
+   $('.skill-inscir .skill-per').html(progress + "%");
+
+})
+
+
+//工作案例切换
+$(".works-list-tab li").on("click",function(){
+  $(this).addClass("act").siblings().removeClass("act");
+  $(".works .works-list").fadeOut("fast");
+  $(".works .works-list").eq($(this).index()).fadeIn("fast");
+})
+
+
+
+// loading
+$(window).load(function(){
+  $(".preloader").delay(600).fadeOut("slow")
+});
+
+// niceScroll
+$("html").niceScroll();
+
+// Stick menu
+$("nav").sticky({topSpacing:0});
+// var navH = $("nav").offset().top;
+//  //滚动条事件
+//  $(window).scroll(function(){
+//   var scroH = $(this).scrollTop();
+//   if(scroH>=navH){
+//     $("nav").addClass('navfixed')
+//   }else if(scroH<navH){
+//      $("nav").removeClass("navfixed")
+//   }
+//  })
+
+
+// 首页幻灯片
+var swiper = new Swiper('.swiper-container', {
+    autoplay: 3000,//可选选项，自动滑动
+    pagination: '.swiper-pagination',//添加滑动按钮
+    paginationClickable: true
+});
+
+// 移动端菜单
+$(document).on('click',".m-nav-menu",function(){
+  $(".m-nav-menu").toggleClass('on');
+  $(".nav-menu").slideToggle();
+});
+
+if($(window).width()<=540){
+  $(".nav-menu").on("click",function(){
+    $(this).hide();
+  })
+};
+
+
+(function(){
+  window.scrollReveal = new scrollReveal({ reset: true, move: '100px'});
+})();
+
+
+
+</script>
+</body>
+</html>
