@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<span class="btn_click_num"></span>
+<button class="btn">点击显示点击次数</button>
+
+<script src="http://static1.72byte.com/js/jquery.min.js">
+  <script>
+  	/* Javascipt（使用的是jQuery框架） */
+    $('.btn').on("click",function (e) {
+        arguments.callee.num = arguments.callee.num ? arguments.callee.num : 0;
+        $('.btn_click_num').text(++arguments.callee.num);
+        console.log('第' + arguments.callee.num + '次点击。')
+    });
+  </script>
+</body>
+</html>
