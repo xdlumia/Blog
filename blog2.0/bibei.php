@@ -113,7 +113,7 @@ Template Name:装机必备
            <!-- Git -->
            <li>
               <div class="soft-item">
-                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/svn.png" alt=""></div>
+                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/git.png" alt=""></div>
                 <div class="soft-info">
                   <h2 class="name">Git 2.12<span class="time">2017-01-20</span></h2>
                   <p class="desc" title="Git是一款免费、开源的分布式版本控制系统">Git是一款免费、开源的分布式版本控制系统</p>
@@ -1176,7 +1176,7 @@ Template Name:装机必备
            <!--  TeamViewer 12  -->
            <li>
               <div class="soft-item">
-                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/teamViewer.png" alt=""></div>
+                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/teamviewer.png" alt=""></div>
                 <div class="soft-info">
                   <h2 class="name">TeamViewer 12<span class="time">2017-04-17</span></h2>
                   <p class="desc" title="功能强大的远程控制软件">功能强大的远程控制软件</p>
