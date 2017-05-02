@@ -52,10 +52,10 @@
        <section class="side-contact">
           <div class="side-conT"><h3>联系我啊  么么哒!</h3></div>
           <div class="side-conS">
-             <a href="#" target="_blank">&#xe61b;</a>
-             <a href="#" target="_blank">&#xe61c;</a>
-             <a href="#" target="_blank">&#xe61e;</a>
-             <a href="#" target="_blank">&#xe61d;</a>
+             <a href="http://www.weibo.com/xdlumia" target="_blank">&#xe61b;</a>
+             <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=xdq@live.cn" target="_blank">&#xe61c;</a>
+             <a href="#" title="214005111" target="_blank">&#xe61e;</a>
+             <a href="http://wpa.qq.com/msgrd?v=3&uin=214005111&site=qq&menu=yes" target="_blank">&#xe61d;</a>
           </div>
        </section>
    </div>
