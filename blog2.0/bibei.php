@@ -72,6 +72,25 @@ Template Name:装机必备
                 </div>
               </div>
            </li>
+           <!-- notepad++ -->
+           <li>
+              <div class="soft-item">
+                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/notepad.png" alt=""></div>
+                <div class="soft-info">
+                  <h2 class="name">Notepad++<span class="time">2017-04-13</span></h2>
+                  <p class="desc" title="免费的代码编辑器，占用资源小">免费的代码编辑器，占用资源小</p>
+                  <p class="web"><span>大小:2.84M</span>官网：<a href="https://notepad-plus-plus.org" target="_blank" rel="nofollow">notepad-plus-plus.org</a></p>
+                </div>
+                <div class="down">
+                    <a href="https://notepad-plus-plus.org/repository/7.x/7.3.3/npp.7.3.3.Installer.exe" rel="nofollow">
+                      <i class="iconfont icon-windows"></i><span>PC版下载</span>
+                    </a>
+                    <a href="javascript:void(0)" rel="nofollow">
+                      <i class="iconfont icon-apple"></i><span>Mac无</span>
+                    </a>
+                </div>
+              </div>
+           </li>
            <!-- TortoiseSVN -->
            <li>
               <div class="soft-item">
@@ -86,6 +105,25 @@ Template Name:装机必备
                       <i class="iconfont icon-windows"></i><span>PC版下载</span>
                     </a>
                     <a href="javascript:void(0)" rel="nofollow">
+                      <i class="iconfont icon-apple"></i><span>Mac下载</span>
+                    </a>
+                </div>
+              </div>
+           </li>
+           <!-- Git -->
+           <li>
+              <div class="soft-item">
+                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/svn.png" alt=""></div>
+                <div class="soft-info">
+                  <h2 class="name">Git 2.12<span class="time">2017-01-20</span></h2>
+                  <p class="desc" title="Git是一款免费、开源的分布式版本控制系统">Git是一款免费、开源的分布式版本控制系统</p>
+                  <p class="web"><span>大小:36M</span>官网：<a href="https://git-scm.com/" target="_blank" rel="nofollow">https://git-scm.com</a></p>
+                </div>
+                <div class="down">
+                    <a href="http://pan.baidu.com/s/1gePTeh1" rel="nofollow">
+                      <i class="iconfont icon-windows"></i><span>PC版下载</span>
+                    </a>
+                    <a href="http://pan.baidu.com/s/1dE9ceS5" rel="nofollow" target="_blank">
                       <i class="iconfont icon-apple"></i><span>Mac下载</span>
                     </a>
                 </div>
