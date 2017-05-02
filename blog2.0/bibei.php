@@ -1173,6 +1173,25 @@ Template Name:装机必备
                 </div>
               </div>
            </li>
+           <!--  TeamViewer 12  -->
+           <li>
+              <div class="soft-item">
+                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/teamViewer.png" alt=""></div>
+                <div class="soft-info">
+                  <h2 class="name">TeamViewer 12<span class="time">2017-04-17</span></h2>
+                  <p class="desc" title="功能强大的远程控制软件">功能强大的远程控制软件</p>
+                  <p class="web"><span>大小:12.36M</span>官网：<a href="https://www.teamviewer.com/en/" target="_blank" rel="nofollow">teamviewer.com</a></p>
+                </div>
+                <div class="down">
+                    <a href="https://dl-cdn.teamviewer.com/download/version_12x/TeamViewer_Setup.exe" rel="nofollow">
+                      <i class="iconfont icon-windows"></i><span>PC版下载</span>
+                    </a>
+                    <a href="https://dl-cdn.teamviewer.com/download/version_12x/TeamViewer.dmg" rel="nofollow">
+                      <i class="iconfont icon-apple"></i><span>Mac下载</span>
+                    </a>
+                </div>
+              </div>
+           </li>
          </ul>
          <!-- 游戏娱乐 -->
          <ul>
@@ -1358,8 +1377,10 @@ $('.software-con li .soft-item').on('mouseleave',function(){
   $(this).removeClass('act')
 })
 
+
 // 锚链接
-$(window).scroll(function(){
+$(window).load(function(){
+  $(window).scroll(function(){
       var scrollTop = $(document).scrollTop();
 
       var oUl = $('.lift-nav ul'); 
@@ -1377,7 +1398,9 @@ $(window).scroll(function(){
           oUl.find(".act").removeClass('act');
           oUl.find('[href='+idname+' ]').addClass('act')
         }
+  })
 })
+
 
 // 定位导航
 $(function(){
