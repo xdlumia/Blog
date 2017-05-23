@@ -457,8 +457,27 @@ Template Name:装机必备
                     <a href="http://net.geo.opera.com/opera/stable/windows?http_referrer=http://pc.qq.com/detail/14/detail_314.html&utm_source=pc.qq.com_via_opera_com&utm_medium=roc&utm_campaign=(referral)_via_opera_com&utm_content=/detail/14/detail_314.html&utm_fsce=true&utm_defbr=false" rel="nofollow">
                       <i class="iconfont icon-windows"></i><span>PC版下载</span>
                     </a>
-                    <a href="http://sw.bos.baidu.com/sw-search-sp/software/00f4654ad7a2a/opera_stable_39.0.2256.43_mac.dmg" rel="nofollow">
+                    <a href="http://sw.bos.baidu.com/sw-search-sp/software/00f4654ad7a2a/opera_stable_39.0.2256.43_mac.dmg">
                       <i class="iconfont icon-apple"></i><span>Mac下载</span>
+                    </a>
+                </div>
+              </div>
+           </li>
+           <!-- ie11浏览器 -->
+           <li>
+              <div class="soft-item">
+                <div class="soft-logo"><img src="<?php bloginfo('template_url'); ?>/images/logo/ie11.png" alt=""></div>
+                <div class="soft-info">
+                  <h2 class="name">Internet Explorer 11<span class="time">2017-04-26</span></h2>
+                  <p class="desc" title="IE11是微软旗下的浏览器产品">IE11是微软旗下的浏览器产品</p>
+                  <p class="web"><span>大小:55.75M</span>官网：<a href="http://go.microsoft.com" target="_blank" rel="nofollow">go.microsoft.com</a></p>
+                </div>
+                <div class="down">
+                    <a href="http://download.microsoft.com/download/A/C/9/AC924EA1-9F39-4DFD-99DF-2C1DEB922174/EIE11/WOL/EIE11_EN-US_WOL_WIN764.EXE" rel="nofollow">
+                      <i class="iconfont icon-windows"></i><span>x64下载</span>
+                    </a>
+                    <a href="http://download.microsoft.com/download/A/C/9/AC924EA1-9F39-4DFD-99DF-2C1DEB922174/EIE11/WOL/EIE11_EN-US_WOL_WIN7.EXE" rel="nofollow">
+                      <i class="iconfont icon-windows"></i><span>x86下载</span>
                     </a>
                 </div>
               </div>

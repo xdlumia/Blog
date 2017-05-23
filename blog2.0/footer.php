@@ -1,5 +1,17 @@
 
 <footer>
+   <div class="friendlink">
+     <div class="center-block">
+       <h2>友情链接：</h2>
+       <ul>
+         <li><a href="#">it之家</a></li>
+         <li><a href="#">it之家</a></li>
+         <li><a href="#">it之家</a></li>
+         <li><a href="#">it之家</a></li>
+         <li><a href="#">it之家</a></li>
+       </ul>
+     </div>
+   </div>
    <a href="/home" class="logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png"></a>
    <ul class="nav">
      <li><a href="/">博客首页</a></li>
@@ -106,6 +118,21 @@ $(".blog-nav form .text").on("click",function(){
     else {
         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
     }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- 页面自动推送链接 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();

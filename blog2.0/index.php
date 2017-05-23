@@ -36,7 +36,7 @@
    <div class="content-box">
       <ul class="artList">
          <?php
-            $post_num = 10; // 显示文章的数量.
+            $post_num = 15; // 显示文章的数量.
             $args=array(
             'post_status' => 'publish',
             'paged' => $paged,
@@ -70,6 +70,13 @@
            </div>
          </li>
          <?php endwhile; else: endif; wp_reset_query();?> 
+         <div class="posts-nav">
+          <?php echo paginate_links(array(
+            'prev_next'          => 1,
+            'before_page_number' => '',
+            'mid_size'           => 2,
+          ));?>
+</div>
       </ul>
    </div>
    <?php get_sidebar(); ?>

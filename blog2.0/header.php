@@ -33,7 +33,9 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/owl.carousel.css">
 <link href="http://at.alicdn.com/t/font_900ytu1hnn8c9pb9.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/fonts/iconfont.css" type="text/css">
+<!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/fonts/iconfont.css" type="text/css"> -->
+<link rel="stylesheet" href="http://at.alicdn.com/t/font_vkueme9jqo20529.css" type="text/css">
+
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <?php wp_head(); ?>
 </head>

@@ -1,6 +1,10 @@
 <?php get_header(); ?>
+
 <div class="container center-block">
+   
    <div class="content-box">
+      <!-- 面包屑导航 -->
+      <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?> 
       <div class="article">
         <?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
          <h1><?php the_title(); ?></h1>
@@ -11,11 +15,13 @@
            <span><i>&#xe612;</i>条评论</span>
            <span><i>&#xe620;</i><?php edit_post_link('编辑'); ?></span>
          </div>
+         <!-- 文章正文 -->
          <div class="articel-con">
-           <p><?php the_content(); ?></p>
-
-
-               <?php  $custom_fields = get_post_custom_keys($post_id);
+           <p><?php the_content(); ?></p>            
+         </div>
+         <!-- 版权 -->
+         <div class="postcopyright">
+         <?php  $custom_fields = get_post_custom_keys($post_id);
                 if (!in_array ('copyright', $custom_fields)) : ?>               
                  转载请注明出处
                <?php else: ?>               
@@ -25,8 +31,18 @@
                   原文:<a target="_blank" target="_blank" rel="nofollow" href="<?php echo $custom_value[0] ?>" >
                    <?php echo $custom_value[0] ?></a>
                </div>
-               <?php endif; ?>               
+               <?php endif; ?> 
          </div>
+         <!-- 百度分享插件 -->
+         <div class="bdsharebuttonbox">
+           <a href="#" class="bds_more iconfont icon-jia" data-cmd="more"></a>
+           <a href="#" class="bds_qzone iconfont icon-qqkongjian" data-cmd="qzone" title="分享到QQ空间"></a>
+           <a href="#" class="bds_tsina iconfont icon-iconfontweibo" data-cmd="tsina" title="分享到新浪微博"></a>
+           <a href="#" class="bds_weixin iconfont icon-weixin" data-cmd="weixin" title="分享到微信"></a>
+         </div>
+
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
          <ul class="cat_related">
            <h2>相关文章</h2>
            <?php
@@ -36,7 +52,7 @@
             $args = array(
                   'category__in' => array( $cats[0] ),
                   'post__not_in' => array( $post->ID ),
-                  'showposts' => 5,
+                  'showposts' => 6,
                   'caller_get_posts' => 1
               );
           query_posts($args);
