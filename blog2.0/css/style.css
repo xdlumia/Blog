@@ -526,5 +526,5 @@ div#SOHUCS {
     margin-top: 5px;
 }
 /*百度分享*/
-.bdshare-button-style0-32 a{ width: 35px !important; height: 35px !important; line-height: 35px !important; text-align: center !important; background:#000 !important; border-radius: 5px !important; font-size: 22px; color: #fff !important; text-indent: 0 !important; }
+.bdshare-button-style0-32 a{ width: 35px !important; height: 35px !important; line-height: 35px !important; text-align: center !important; background:#000 !important; border-radius: 50% !important; font-size: 22px; color: #fff !important; text-indent: 0 !important; }
 
