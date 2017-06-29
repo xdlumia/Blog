@@ -759,7 +759,7 @@ Template Name:装机必备
          </ul>
          <!-- 下载上传 -->
          <ul>
-           <h3 id="downtool icon-xiazai"><i class="iconfont"></i>下载上传</h3>
+           <h3 id="downtool"><i class="iconfont icon-xiazai"></i>下载上传</h3>
            <!-- 迅雷9 -->
            <li>
               <div class="soft-item">
