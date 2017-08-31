@@ -1,21 +1,35 @@
    <div class="sideBar">
+     <section class="hot-recomm">
+            <h2 class="side-title">热门推荐</h2>
+              <?php
+              $args = array( 'numberposts' => 1, 'orderby' => 'rand', 'post_status' => 'publish' );
+              $rand_posts = get_posts( $args );
+              foreach( $rand_posts as $post ) : ?>
+            <div class="big-hot">
+              <a href="<?php the_permalink(); ?>" target="_blank" title="<?php the_title(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/timthumb.php?src=<?php echo post_thumbnail_src(); ?>&h=160&w=300&zc=1" alt="<?php the_title(); ?>" />
+                <h3><?php the_title(); ?></h3>
+              </a>
+            </div>
+            <?php endforeach; ?>
+
+            <?php
+              $args = array( 'numberposts' => 15, 'orderby' => 'rand', 'post_status' => 'publish' );
+              $rand_posts = get_posts( $args );
+              foreach( $rand_posts as $post ) : ?>
+
+            <dl>
+              <dd class="dl-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?></a></dd>
+
+            </dl>
+            <?php endforeach; ?>
+       </section>
+
        <section class="hot-recomm">
-          <h2 class="side-title">本月热门文章</h2>
-          <?php
-            $args = array( 'numberposts' => 1, 'orderby' => 'rand', 'post_status' => 'publish' );
-            $rand_posts = get_posts( $args );
-            foreach( $rand_posts as $post ) : ?>
-          <div class="big-hot">
-            <a href="<?php the_permalink(); ?>" target="_blank" title="<?php the_title(); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/timthumb.php?src=<?php echo post_thumbnail_src(); ?>&h=160&w=300&zc=1" alt="<?php the_title(); ?>" />
-              <h3><?php the_title(); ?></h3>
-            </a>
-          </div>
-          <?php endforeach; ?>
-
+          <h2 class="side-title">热门文章</h2>
 
           <?php
-            $post_num = 3; // 设置调用条数
+            $post_num = 15; // 设置调用条数
             $args = array(
                   'post_password' => '',
                       'post_status' => 'publish', // 只选公开的文章.
@@ -29,12 +43,11 @@
                     while( $query_posts->have_posts() ) { $query_posts->the_post(); ?>
 
           <dl>
-            <dt><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" target="_blank">
-              <img src="<?php echo get_template_directory_uri(); ?>/timthumb.php?src=<?php echo post_thumbnail_src(); ?>&h=65&w=65&zc=1" alt="<?php the_title(); ?>"/></a></dt>
             <dd class="dl-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?></a></dd>
-            <dd class="dl-date"><i>&#xe606;</i><?php the_time('Y-m-d') ?></dd>
+
           </dl>
           <?php } wp_reset_query();?>
+          
 
        </section>
        <section class="hot-tag">

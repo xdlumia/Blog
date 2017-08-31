@@ -135,7 +135,7 @@ header ul li a:hover{ color: #19B5FE }
 .read-more:hover{ background: #ff5e5c; }
 
 /*面包屑导航*/
-#crumbs{ background: #fff;padding:10px 20px;box-shadow:0 0 5px rgba(0,0,0,.01); margin-bottom: 10px; }
+#crumbs{ background: #efefef;padding:10px 20px;box-shadow:0 0 5px rgba(0,0,0,.01); margin-bottom: 10px; }
 #crumbs a,
 #crumbs span{ color: #555; }
 #crumbs a:hover{ color: #19B5FE }
@@ -199,12 +199,14 @@ header ul li a:hover{ color: #19B5FE }
 .hot-recomm .big-hot img{ width: 100%;height: 100%; display: block; transition:all .2s ease-in; }
 .hot-recomm .big-hot h3{ position: absolute; left: 0; bottom: 0;padding:8px 10px; width: 100%; box-sizing: border-box; font-size: 14px; color: #ccc; background: rgba(0,0,0,.5); }
 .hot-recomm .big-hot:hover img{ transform:scale(1.1); }
-.hot-recomm dl{ overflow:hidden; margin-bottom: 20px; }
+.hot-recomm dl{ overflow:hidden; margin-bottom: 0px; }
 .hot-recomm dl dt{ width: 65px; height: 65px; float: left;overflow: hidden; }
 .hot-recomm dl dt img{ display: block; width: 100%; }
-.hot-recomm dl dd{margin-left: 75px;}
-.hot-recomm .dl-title{line-height:14px; margin-bottom: 10px;}
-.hot-recomm .dl-title a{ color: #666; line-height: 20px}
+
+/*.hot-recomm dl dd{margin-left: 75px;}*/
+
+.hot-recomm .dl-title{line-height:14px; margin-bottom: 10px; overflow: hidden; white-space: nowrap; font-size: 12px;}
+.hot-recomm .dl-title a{     color: #666; line-height: 14px; border-left: 2px solid #ccc; padding-left: 10px; height: 14px; display: block;}
 .hot-recomm .dl-title a:hover{ color: #00a7eb }
 .hot-recomm .dl-date{ font-size: 11px; color: #666; font-weight: 300; }
 .hot-recomm .dl-date i{ font-family:"iconfont"; margin-right: 5px;}
@@ -218,7 +220,7 @@ header ul li a:hover{ color: #19B5FE }
 .hote-taglist a:nth-child(6n+6) { background-color: #9e0ca0;}
 .hote-taglist a:hover{background-color:#4a4a4a}
 
-.art-placelist li{ display: block; margin-bottom: 10px;}
+.art-placelist li{ display: block; margin-bottom: 10px; float: left; margin-right: 10px;}
 .art-placelist li a{display:inline-block; border-radius: 2px; padding: 4px 10px; background: #ff5e5c}
 .art-placelist li a:hover{ background:#4a4a4a; }
 
